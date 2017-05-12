@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+---
+
+spring:
+    profiles: heroku
+    
+    jpa:
+        database: MYSQL
+        hibernate:
+            ddl-auto: validate
+            naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+            dialect: org.hibernate.dialect.MySQL5Dialect
+
+    datasource:
+        url: jdbc:mysql://mysql:3306/demo
+        username: demo_user
+        password: demo_pass
+        driver-class-name: com.mysql.jdbc.Driver
+
+server:
+  port: ${PORT}
