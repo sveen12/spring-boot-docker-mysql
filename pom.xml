@@ -29,7 +29,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <start-class>com.jiwhiz.demo.DemoApplication</start-class>
         <docker.image.prefix>jiwhiz</docker.image.prefix>
-        <full-artifact-name>target/${project.artifactId}-${project.version}.jar</full-artifact-name>
+        <full-artifact-name>target/demo.jar</full-artifact-name>
     </properties>
 
     <dependencies>
